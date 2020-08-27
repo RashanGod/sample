@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Titulo de la pestaña -->
+        <title> Guia HTML by Rashan</title>
+        <!-- Icono de la pestaña -->
+        <link rel="shortcut icon" href="img/Happy.jpg">
+    </head>
+    <body>
+        <!-- Logotipo de la pagina -->l>
+        </ul>
+        <ol>		
+            <li>Vegetables</li>	
+            <li>Fruit
+               <ul>				
+                  <li>Blueberries</li>
+              <li>Bananas</li>
+               </ul>
+            </li>
+        </ol>
+        <header>
+            <img src="img/LogoBlizzardx128.png" alt="">
+        </header>
+        <!-- Navegacion -->
+        <nav>
+            <!-- Zona de arriba -->
+            <a href="guia.html#abajo">Ir al final</a>
+        </nav>
+        <!-- Contenido no relacionado -->
+        <aside>
+            <a href="https://www.messenger.com/" title = "Vamo al Messenger v:">Entrar a Messenger</a>
+        </aside>
+        <!-- Parrados -->
+        <h1> Titulo Super Cool </h1>
+        <h2> Listado por puntitos: </h2>
+        <!-- Listado: -->
+        <ul>
+            <li>Elemento: <strong>Uno = 1</strong></li>
+            <li>Elemento: <em>Dos = 2</em></li>
+            <li>Elemento: Tres = 3</li>
+        </ul>
+        <!-- Listado I , II, III, etc -->
+        <h2> Listado tipo "I": </h2>
+        <ol type ="I">
+            <li>Elemento: <strong>Uno = 1</strong></li>
+            <li>Elemento: <em>Dos = 2</em></li>
+            <li>Elemento: Tres = 3</li>
+        </ol>
+        <!-- Listado inverso, reversed = "reversed" -->
+        <h2> Listado inverso tipo I</h2>
+        <ol type ="I" reversed = "reversed">
+            <li>Elemento: <strong>Uno = 1</strong></li>
+            <li>Elemento: <em>Dos = 2</em></li>
+            <li>Elemento: Tres = 3</li>
+        </ol>
+        <!-- Listado anidado -->
+        <h2>Listado anidado: cardinales y ordinales</h2>
+		<ul>
+			<li>Numeros cardinales:
+				<ol type ="a">
+					<li>Uno</li>
+					<li>Dos</li>
+					<li>Tres</li>
+				</ol>
+			</li>
+			<li>Numeros ordinales:
+				<ol type = "A">
+					<li>Primero</li>
+					<li>Segundo</li>    
+					<li>Tercero</li>
+				</ol>
+			</li>
+        </ul>
+        <!-- Lista de definicion -->
+        <h2>Lista definida: Paises y sus capitales</h2>
+        <dl>
+            <dt>Peru</dt>
+            <dd>Lima</dd>
+            <dt>Colombia</dt>
+            <dd>Bogotá</dd>
+            <dt>Bolivia</dt>
+            <dd>La Paz</dd>
+        </dl>
+        <!-- Super índice y sub indice -->
+        <h2>Super índice y sub indice</h2>
+        <p>
+            x<sup>2</sup>+4 = <mark>H<sub>2</sub>O</mark>
+        </p>
+        <!-- Creacion de tablas -->
+        <h2>Una Taaabla :v</h2>
+        <table border="1">
+            <!-- Titulo: -->
+            <caption> Tabla Chidory</caption>
+            <tr><th>Encabezado1</th><th>Encabezado2</th></tr>
+            <tr><td>Dato1</td><td>Dato2</td></tr>
+            <tr><td>Dato3</td><td>Dato4</td></tr>
+        </table>
+        <h2>Otra taaaabla </h2>
+        <table border="1">
+            <caption>Tabla con doble uso de filas</caption>
+            <!-- Columnas= "colspan", Filas = "rowspan" -->
+            <tr><th>Letra</th><th>Animales</th><th>Frutas</th></tr>
+            <tr><td rowspan="2">F</td><td>Flamenco</td><td>Fresa</td></tr>
+            <tr><td>Foca</td><td>Frambuesa</td></tr>
+            <tr><td rowspan="3">B</td><td>Baka</td><td>Banana</td></tr>
+            <tr><td>Buho</td><td>Berenjena</td></tr>
+            <tr><td>Buitre</td><td>Barbacoa</td></tr>
+        </table>
+        <!-- Formularioooos -->
+        <h2>Formularioooos :v</h2>
+
+        <form id = "form-order">
+            <p>
+                <label for="name">Nombre</label>
+                <input type="text" name = "name" id="name"
+                placeholder="Timmmy Turner" 
+                autofocus
+                autocomplete="on"
+                required>
+            </p>
+
+            <p>
+                <label for="passwd">Contraseña</label>
+                <input type="password" name = "passwd" id="passwd"
+                placeholder="pdj4958"
+                pattern="[a-z]{3}[0-9]{4}"/> (La contraseña debe contener 3 letras y 4 numeros en ese orden)
+            </p>
+            
+            <p>    
+                <label for="phone">Telefono</label>
+                <input type="tel" name = "phone" id="phone" placeholder="+51 945872540" >
+            </p>
+            
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name = "email" id="email" placeholder="rashan@hotmail.com" >
+            </p>
+
+            <p>
+                <label for="website">Tu pagina web</label>
+                <input type="url" name = "website" id="website" placeholder="https://www.rashanGod.edu.com" >
+            </p>
+
+            <p>
+                <label for="numberExample">N° de temas</label>
+                <input type="number" name = "numberExample" id="numberExample"
+                min = "2" max = 14 placeholder="2" step = "2">(Entre 2 y 4, solo pares)
+            </p>
+
+            <p>
+                <label for="deliverydate">Fecha de envio</label>
+                <input type="date" name = "deliverydate" id="deliverydate"
+                min = "2012-07-05">(Minimo 5 de julio de 2012)
+            </p>
+
+            <p>
+                <label for="colorExample">Color del item</label>
+                <input type="color" name = "colorExample" id="colorExample"
+                value="#1A33FF">(Minimo 5 de julio de 2012)
+            </p>
+
+            <p>
+                <label for="search">Buscar</label>
+                <input type="search" name = "search" id = "search">
+            </p>
+
+            <p>
+                <label for="points">Rango de valores</label>
+                <input type="range" name = points id = points
+                min = "1" max = 10>(entre 1 y 10)
+            </p>
+            
+            <fieldset>
+                <legend>Seleccione una prioridad</legend>
+                <p>
+                    <label for="priority">Baja</label>
+                    <input type="radio" name = "priority" id ="priority" value = "baja" checked>
+                </p>
+                <p>
+                    <label for="priority2">Normal</label>
+                    <input type="radio" name = "priority2" id ="priority2" value = "normal">
+                </p>
+                <p>
+                    <label for="priority3">Alto</label>
+                    <input type="radio" name = "priority3" id ="priority3" value = "alto">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Seleccione una prioridad</legend>
+                <p>
+                    <label for="deliveryType">Urgente</label>
+                    <input type="checkbox" name = "deliveryType" id ="deliveryType" value = "urgente" checked>
+                </p>
+                <p>
+                    <label for="deliveryType2">Con acuso de recibo</label>
+                    <input type="checkbox" name = "deliveryType2" id ="deliveryType2" value = "acuso">
+                </p>
+                <p>
+                    <label for="deliveryType3">Contra Reembolso</label>
+                    <input type="checkbox" name = "deliveryType3" id ="deliveryType3" value = "reembolso">
+                </p>
+            </fieldset>
+            
+            <input type="submit" value = "Enviar">
+
+
+        </form>
+
+
+        <!-- <input type="text" value = "Buscar...">
+        <input type="checkbox" name="temas">
+        <input type="file" accept ="image/jpg">
+        <input type="submit"> -->
+
+
+        <!--  Pie de pagina  -->
+        <footer>
+            <p>Créditos: <strong>Rashan</strong></p>
+            
+            <!-- "#" = Redirecciona al inicio -->
+            <p><a href="#"> Volver al inicio </a></p>
+        </footer>
+        <!-- Ir a zona de abajo -->
+        <a id = "abajo"></a>
+        <!-- <a href="guia.html#arriba">Ir al comienzo</a> -->
+    </body>
+</html>
